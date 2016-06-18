@@ -60,8 +60,6 @@ Great! You should now see a new file called `package.json` in your project's fol
 
 ### [Go to Step 2 >>>>](https://github.com/node-girls/express-workshop/blob/master/step02.md)
 
----
-
 ## Keywords
 * git checkout
 * [`package.json`](http://browsenpm.org/package.json)
