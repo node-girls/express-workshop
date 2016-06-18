@@ -34,6 +34,8 @@ Clone the repository to your desktop in the terminal. Instructions for doing thi
 
 `$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
+### [Go to Step 1 >>>>](https://github.com/node-girls/express-workshop/blob/master/step01.md)
+
 ## Useful Links
 
 * [What is Node?](https://github.com/node-girls/what-is-node)
