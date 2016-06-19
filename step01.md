@@ -1,16 +1,12 @@
 # Step 1 - Setting up your project
 
-Often when creating a project, you will be installing a lot of different things along the way.
+When creating a Node.js project, you will be installing a lot of different things along the way. If you want to share your project with others, you need to have a list of the things you installed, so that other people know what to install in order to run the project.
 
-If you want to share your project with others, it's useful to have a list of the things you installed in one file, so that other people's machines know what to install in order to run the project.
-
-This 'list' file is called a `package.json`. The 'things you've installed' are referred to as **dependencies**. Creating this file is the first step in setting up your Node.js project.
+In Node.js, this 'list' file is called a `package.json`. The 'things you've installed' are referred to as **dependencies**. Creating this file is the first step in setting up your Node.js project.
 
 ## 1. Make a `package.json` file
 
-Let's start by creating the `package.json` file. We can add things to it as the project grows.
-
-The `package.json` file can be created from the command line. Type the following command into your terminal to get started.
+Let's start by creating the `package.json` file. We can add things to it as the project grows. The `package.json` file is easy to create from the command line. Type the following command into your terminal to get started:
 
 ```
 $ npm init
