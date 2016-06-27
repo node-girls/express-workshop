@@ -13,6 +13,8 @@ Express should now be installed. Check your `package.json` file to make sure it 
 ### [Go to Step 3 >>>>](https://github.com/node-girls/express-workshop/blob/master/step03.md)
 
 ## Keywords
-* npm package manager
-* `npm install`
-* `--save`
+
+| Keyword | Explanation |
+|--------|:-------------------------------:|
+| `npm install [package-name]` | The terminal command used to install a package from npm. |
+| `--save` | When added to the end of an `npm install` command, `--save` adds that npm package to the `package.json` file. |
