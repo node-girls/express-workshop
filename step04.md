@@ -6,11 +6,11 @@ Now that we've built the server, we need to communicate with it. We're going to 
 
 When a request reaches the server, we need a way of responding to it. In comes the **handler** function. The handler function is just a function which receives requests and handles them, hence the name.
 
-In Express, we attach handler functions to **routes**. This allows us to send back different responses at different **endpoints**. An endpoint consists of a **URI** (or path), and an HTTP request method (**GET**, **POST**, and so on).
-
 The handler function always takes a `request` and `response` object, and sends the response back to the client along with some information. You can decide what to send back in your response.
 
-Here's a simple "Hello World!" handler function:
+### What does a handler function look like in Express?
+
+The `get()` method is used to define a handler function in Express. It takes two parameters: the **endpoint** at which to trigger an action (we'll explain more about this in the next step), and the handler function that tells it exactly what to do. Here's a simple "Hello World!" example:
 
 ```js
 app.get("/", function (req, res) {
@@ -18,21 +18,13 @@ app.get("/", function (req, res) {
 });
 ```
 
-In this example, our endpoint is "/", using the GET request method. We are telling our server to respond with "Hello World!" when someone accesses the homepage.
-
-Want to send that response back at "/hello"? It'll look like this:
-
-```js
-app.get("/hello", function (req, res) {
-  res.send("Hello World!");
-});
-```
+ Here, we are telling our server to respond with "Hello World!" when someone tries to access the webpage.
 
 ## 1. Create your own handler function.
 
 We are now making a handler function with a custom message in our response. You can write any message you want.
 
-Update your `server.js` file with an empty handler function. We want it to handle requests at the "/" endpoint, using the GET method.
+Update your `server.js` file with an empty `app.get()` function:
 
 
 ```js
@@ -48,16 +40,13 @@ app.listen(3000, function () {
 });
 ```
 
-Try `console.log`-ing the `req` object in your terminal to see what it looks like.
+Try to `console.log` the `req` object in your terminal to see what it looks like. You should see a lot of data come through.
 
 ## 2. Tell your handler function what to do
 
-We want our handler function to send our message in a response. To do that we will use one of the method of `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v4.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
+We want our handler function to send back a message to the client. To do that, we're going to use the Express `send()` method. This will update the response object with the message.
 
-Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes
-2 parameters: status code and header object.
-
-**Add these line to the handler function**
+Update your handler function like so:
 
 ```js
 var express = require("express");
@@ -72,18 +61,15 @@ app.listen(3000, function () {
 });
 ```
 
-## 3. Rerun your server and go to your favourite browser
+## 3. Check it out in your browser
 
-**Rerun your server by typing again**
-
+Quit your server in the terminal with `ctrl + c`. Then restart it to run your new changes.
 
 ```
-node server.js
+$ node server.js
 ```
 
-**Type in your browser** `localhost:3000`
-
-If you see your message in the browser, **congratulations** you just sent your first response from the server.
+Now, open your favourite browser (we like Chrome), and navigate to `http://localhost:3000`. If you see your message in the browser, congratulations! You just sent your first response from the server.
 
 ## [**next step >>>**](step5.md)
 ---
