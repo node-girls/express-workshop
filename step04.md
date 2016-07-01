@@ -4,7 +4,7 @@ Now that we've built the server, we need to communicate with it. We're going to 
 
 ### What is a handler function?
 
-When a request reaches the server, we need a way of responding to it. In comes the **handler** function. The handler function is just a function which receives requests and handles them, hence the name.
+When a request reaches the server, we need a way of responding to it. In comes the handler function. The handler function is just a function which receives requests and handles them, hence the name.
 
 The handler function always takes a `request` and `response` object, and sends the response back to the client along with some information. You can decide what to send back in your response.
 
@@ -71,9 +71,11 @@ $ node server.js
 
 Now, open your favourite browser (we like Chrome), and navigate to `http://localhost:3000`. If you see your message in the browser, congratulations! You just sent your first response from the server.
 
-## [**next step >>>**](step5.md)
----
-### Keywords:
-* handler function
-* status code
-* response.writeHead()
+### [Go to Step 5 >>>>](step05.md)
+
+| Keyword | Explanation |
+|--------|:-------------------------------:|
+| handler function | A function that receives requests and tells the server how to respond to them. |
+| endpoint | The part of the URL which comes after /. For example: `/chocolate` is the "chocolate" endpoint. |
+| `get()` | The Express method used to set up a handler function in Express. Takes two parameters: the endpoint, and the handler function. |
+| `send()` | The Express method used to send information back to the client from the server. Updates the response object. |
