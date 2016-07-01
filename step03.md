@@ -71,7 +71,7 @@ If you see this, congratulations! You have built yourself a server!
 ![success](https://raw.githubusercontent.com/node-girls/workshop-cms/master/readme-images/step2-server02.png)
 
 
-### [Go to Step 3 >>>>](https://github.com/node-girls/express-workshop/blob/master/step03.md)
+### [Go to Step 4 >>>>](step04.md)
 
 ## Keywords
 
