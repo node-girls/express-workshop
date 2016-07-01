@@ -103,7 +103,7 @@ res.redirect('/');
 ```
 
 This means: "please redirect to the `/` endpoint."  This little trick will refresh the page!
-## [**Next step >>>**](step7.md)
+## [**Next step >>>**](step07.md)
 
 ---
 ### Keywords
