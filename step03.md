@@ -77,11 +77,11 @@ If you see this, congratulations! You have built yourself a server!
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|
-| Server | A web server is a software application which handles HTTP requests sent by the client, like web browsers, and returns web pages and information in response. |
-| Client | A client requests services and information from the server. Typically, a client is a computer application, such as a web browser. |
-| Request | A request is the message sent via HTTP from the client to the server, asking for information. |
-| Response | A response is the data sent back to the client from the server after an HTTP request is made. |
-| Require | Require is used in Node.js to import functionality from another file or an external module. |
-| Module | A module is a bit of reusable code, written by you or someone else, that can be imported into a Node.js project using require. |
-| Method | Method is another name for a function. |
-| Port | A port is a number that serves as an endpoint, determining where you can access your web application. |
+| server | A web server is a software application which handles HTTP requests sent by the client, like web browsers, and returns web pages and information in response. |
+| client | A client requests services and information from the server. Typically, a client is a computer application, such as a web browser. |
+| request | A request is the message sent via HTTP from the client to the server, asking for information. |
+| response | A response is the data sent back to the client from the server after an HTTP request is made. |
+| `require()` | Require is used in Node.js to import functionality from another file or an external module. |
+| module | A module is a bit of reusable code, written by you or someone else, that can be imported into a Node.js project using require. |
+| method | Method is another name for a function. |
+| port | A port is a number that serves as an endpoint, determining where you can access your web application. |
