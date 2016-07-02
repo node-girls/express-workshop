@@ -78,6 +78,11 @@ This time though, `body-parser` is not built-in, we need to explicitly install i
 npm install body-parser --save
 ```
 
+`require` body-parser so you can use it in your code:
+```js
+var bodyParser = require('body-parser');
+```
+
 Now add this towards the top of your server, after your `require`s and before your `/create-post` endpoint:
 ```js
 app.use(bodyParser.urlencoded({ extended: true }));
