@@ -4,6 +4,11 @@ If you finish early, or want to keep working on this as a side project after the
 
 It would be a great idea to create a new branch on Git for yourself, so you can experiment and not have to worry about ruining your previous code.
 
+### Display individual posts with URL parameters and templating
+
+Try some more of express's features by adding a page for individual blog posts using express's URL
+parameters and templating stuff. [Tutorial here :)](extension-templating.md).
+
 ### Display the date
  Edit `script.js` so that the timestamps for the previous blog posts are displayed in a human-readable way.
 
@@ -16,7 +21,7 @@ Instead of writing to a file on your hard drive, you could save your blog posts 
 A really simple, quick-to-setup database is Firebase, by Google.  Go to their website [here](https://firebase.google.com/docs/) and check out their Web Get Started guide.
 
 ### Host your blog online!
-Heroku is a what we call a *Platform as a Service*.  You upload your code to them and it will live on one of their servers, meaning you can access it on the general internet from anywhere!  
+Heroku is a what we call a *Platform as a Service*.  You upload your code to them and it will live on one of their servers, meaning you can access it on the general internet from anywhere!
 
 Heroku is good because they have a lot of free options for small-scale apps, like yours.
 
