@@ -16,8 +16,6 @@ Your `script.js` file will want to receive the JSON containing your blog posts. 
 
 If all goes well, you should have a fully functional CMS!
 
-| Keyword | Explanation |
-|--------|:-------------------------------:|
-| `` | A `package.json` is the file used to store information about a Node.js project, such as its name and its dependencies. Read more [here](http://browsenpm.org/package.json). |
-| npm | npm is a "package manager" for Node.js, meaning it allows you to easily install external modules (or chunks of code) published by others and use them in your project. |
-| dependencies | Dependencies are external code modules that are required to run your project. |
+## Congratulations!! 😍
+
+## [**Want more? <br> Try out some stretch goals >>>**](stretch-goals.md)
