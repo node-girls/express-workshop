@@ -9,10 +9,8 @@ If you look inside `public/script.js`, there's a whole bunch of JavaScript code 
 
 Your `script.js` file will want to receive the JSON containing your blog posts.  Your job is to make that happen!
 
-### Things to remember
-* `fs.writeFile()` normally overwrites the target file you've given it.  Chances are you don't want to lose all your old blog posts every time you get a new one, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
+Express has a handy method called `res.sendFile()` that makes it easy to send files back to the client.  Feel free to use this with your JSON.
 
-* You will need to convert between JSON and a JavaScript object several times.  `JSON.parse()` and `JSON.stringify()` are what you need.
 
 If all goes well, you should have a fully functional CMS!
 
