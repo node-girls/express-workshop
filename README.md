@@ -24,15 +24,13 @@ Throughout each step, we have **bolded** any jargon that you may or may not be f
 
 You will need Node.js installed. Download it from the Node.js website [here](https://nodejs.org/en/).
 
-#### 2. Create a Repository
+#### 2. Fork and clone this repository
 
-Create a public repository on GitHub to store your code. Find instructions on how to do that [here](https://help.github.com/articles/create-a-repo/). Make sure you select a Node .gitignore file, and initialise the repository with a README. The setup should look like this:
+Fork this repository to your own GitHub account.  Instructions for doing this can be found [here](https://help.github.com/articles/fork-a-repo/).
 
-<img src="https://cloud.githubusercontent.com/assets/10683087/16171849/01f36002-3572-11e6-8119-cb866571972b.png">
+Then, clone your forked version of the repository to your desktop in the terminal. Instructions for doing this can be found [here](https://help.github.com/articles/cloning-a-repository/), or run the command below.
 
-Clone the repository to your desktop in the terminal. Instructions for doing this can be found [here](https://help.github.com/articles/cloning-a-repository/), or run the command below.
-
-`$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+`$ git clone https://github.com/YOUR-USERNAME/express-workshop`
 
 ### [Go to Step 1 >>>>](https://github.com/node-girls/express-workshop/blob/master/step01.md)
 
