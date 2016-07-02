@@ -106,6 +106,8 @@ This means: "please redirect to the `/` endpoint."  This little trick will refre
 ## [**Next step >>>**](step08.md)
 
 ---
-### Keywords
-* [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)
-* [html forms]
+| Keyword | Explanation |
+|--------|:-------------------------------:|
+| `GET` | An HTTP method for fetching data. Read more [here]((http://www.w3schools.com/tags/ref_httpmethods.asp). |
+| `POST` | An HTTP method for sending data. Read more [here]((http://www.w3schools.com/tags/ref_httpmethods.asp). |
+| `fs` | A core Node.js module for interacting with the file system on your computer.  Read more [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_file_system) |
