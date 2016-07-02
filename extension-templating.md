@@ -12,7 +12,7 @@ Express's URL parameters look like this:
 - `/users/:userId` - matches `/users/123`, `/users/node-girls`
 - `/users/:userId/posts/:postId` - matches `/users/node-girls/posts/node-is-best`
 
-Lets add a handler for serving individual blog posts:
+Let's add a handler for serving individual blog posts:
 
 ```js
 app.get('posts/:postId', function (req, res) {
