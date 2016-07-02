@@ -1,4 +1,4 @@
-# Step 8 - Displaying your blog posts
+# Step 9 - Displaying your blog posts
 
 So now we're saving the blog posts to the server.  Time to get them and display them on the page!
 
