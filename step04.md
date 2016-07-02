@@ -76,6 +76,6 @@ Now, open your favourite browser (we like Chrome), and navigate to `http://local
 | Keyword | Explanation |
 |--------|:-------------------------------:|
 | handler function | A function that receives requests and tells the server how to respond to them. |
-| endpoint | The part of the URL which comes after /. For example: `/chocolate` is the "chocolate" endpoint. |
+| endpoint | The part of the URL which comes after `/`. For example: `/chocolate` is the "chocolate" endpoint. |
 | `get()` | The Express method used to set up a handler function in Express. Takes two parameters: the endpoint, and the handler function. |
 | `send()` | The Express method used to send information back to the client from the server. Updates the response object. |

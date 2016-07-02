@@ -1,113 +1,111 @@
-# Step 7 - Saving your blog post
+# Step 7 - Sending your blog post to your server
 
-Right now, your precious blog posts aren't being saved anywhere, which is a bit of a shame.  Let's do something about that.
+So far we have been requesting data from our server.  But we can also *send* data to the server to be stored somewhere.  
 
-### JSON - the handy data format
+### HTTP request methods
+All requests use one of the HTTP methods. The main ones are: `GET, POST, PUT, DELETE`.
 
-You'll note that in the data folder there's a new file called `posts.json`.
 
-JSON is a type of file for structuring data in a readable way. It is also a really popular format for sending data across the web.
+`app.get` deals with requests that use the `GET` HTTP method.  
 
-JSON is a string representation of a Javascript object. JSON objects convert really easily to Javascript objects, and vice versa, with JSON.parse() and JSON.stringify().
+### The `POST` http request method
 
-(If you're not sure about Javascript objects, have a chat with your mentor and your team.)
+When sending data to the server, we use the `POST` http request method, instead of `GET`.  To understand the difference, follow the "POST vs GET" link in the keywords section below.
 
-If you look at `posts.json` will see there's already one blog post there. The format is:
+Let's try `POST`ing some text to the server.
 
-```js
-{
-    [timestamp]: [blog post message]
-}
+We're going to add a form to the `index.html` page, so that you can write your blogposts from there.
+
+Open up the `index.html` file in your text editor.  If you have a look, you should see this:
+
+```html
+<div class="entry-container">
+    <!--PASTE YOUR CODE HERE!! -->
+</div>
 ```
 
-We've used a timestamp as the key so that the blog posts are listed in chronological order. Also, it's a record of when the blog post was created.
+**Replace the greyed-out comment with this code snippet:**
 
-### Writing to your hard drive
+```html
+<h3>Create a blog post</h3>
+<form action="/create-post" method="POST">
+    <textarea name="blogpost" rows="10" cols="14">
 
-Anytime a blog post comes through to the server, we want to save the data on your computer's hard drive.  To do this, we need to use a built-in Node module: `fs`, which stands for 'file-system'.
-
-Built-in Node modules (core Node modules) are rather like the built-in Express middleware functions.  Only difference is that where you need to have installed Express to use Express middleware functions, the core Node modules come automatically with Node itself.
-
-To use `fs`, you'll need to require it at the top of your server file:
-
-```js
-var fs = require('fs');
+    </textarea>
+    <button type="submit">Send</button>
+</form>
 ```
 
-The method we need to write to your hard drive is `fs.writeFile`.
+* This form has a text area and a Send button.  
+* The `action` attribute is the endpoint form data will be sent to.
+* The `name` attribute will be used later to reference the data.
 
+When you hit Send, the form will send a `POST` request to the server, using whatever is in the `action` attribute as the endpoint.  In our case it's `/create-post`.
+
+### Receiving the blog post on the server
+
+* Data doesn't come through the server in one go; it flows to the server in a **stream**.  Think of a stream as water flowing from a tap into a bucket.  Your job is to collect this water in the server.
+
+* If we were writing a pure Node server, we would have to think about how to collect the stream of data properly.  But luckily for us, Express handles all of that stuff under the hood.  
+
+* All you need to do is define a route to deal with requests that come through on the `/create-post` endpoint.
+
+Let's remind ourselves of a simple `GET` route in Express:
 ```js
-fs.writeFile('path/to/file', yourData, function (error) {
-    // do something
-});
-```
-Argument 1: the location of the file you want to write to
-Argument 2: the data you want to write
-Argument 3: the callback function
-
-The 'path/to/file' will be replaced with the actual path to the file you want to write to.  If it doesn't exist, `fs.writeFile` cleverly creates one for you.  But we already have `posts.json`, so not to worry.
-
-
-### Reading from your hard drive
-To read data that's already there, you would use `fs.readFile`.  The way to use `fs.readFile` is very similar to `fs.writeFile`:
-
-```js
-fs.readFile('path/to/file', function (error, file) {
-    // do something
-});
-```
-Argument 1: the location of the file you want to write to
-Argument 2: the callback function
-
-
-You'll notice that `fs.readFile`'s callback function takes a second argument.  That argument would be the file you're reading.
-
-
-
-Let's read the data from the `posts.json` file.  Make sure you've `require`d the `fs` core Node module at the top of your server file somewhere.
-
-Add this code to your server (put it anywhere after the `require`s for now):
-
-```js
-fs.readFile(__dirname + '/data/posts.json', function (error, file) {
-
-    console.log(file);
+app.get('/my-lovely-endpoint', function (req, res) {
+    res.send('Hello there!');
 });
 ```
 
+This time we want to define a route to deal with a `POST` request.  What do you think you would need to do differently?  Experiment and see if you can define a route for the `/create-post` endpoint!
 
-(`__dirname` is a Node global object that gives you a path to current working directory. It's handy if we want to avoid writing the whole path out in full.)
+For now, make your `/create-post` handler simply do this: `console.log('/create-post')`.
 
+---
 
-You'll probably see something like this:
+### Extracting the blog post
+
+Now the contents of your blogpost is hidden in your `req` object somewhere.  Normally you would extract it using `req.body`.  Try to console.log `req.body` now.
+
+Getting `undefined`?  Not to worry, that's normal.  When data has been `POST`ed to the server, we need to do things slightly differently to access the data that's come through in the request.
+
+We need another middleware function: `body-parser`.  `body-parser` does what it says on the tin, it will **parse** the data in the request and make it available to you when you do `req.body`.
+
+This time though, `body-parser` is not built-in, we need to explicitly install it.
+
+**In your terminal, install body-parser**
 ```bash
-<Buffer 7b 0a 20 20 20 20 22 31 34 36 37 33 39 30 33 35 36 32 39 31 22 3a 20 22 54 68 69 73 20 69 73 20 6d 79 20 76 65 72 79 20 66 69 72 73 74 20 62 6c 6f 67 ... >
+npm install body-parser --save
 ```
-This is actually the contents of your `posts.json` file, but in a format called a **buffer**.  To make it a bit more human-readable, you can console.log the file to a string, like this:
+
+Now add this towards the top of your server, after your `require`s and before your `/create-post` endpoint:
+```js
+app.use(bodyParser.urlencoded({ extended: true }));
+
+```
+(Don't worry too much about the `{ extended:true }` bit.  If you're curious, you can read about it [here](https://www.npmjs.com/package/body-parser#bodyparserurlencodedoptions))
+
+Refresh your server and have another go at writing a blogpost.
+
+You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
+
+
+### Redirecting your page
+
+So you may have noticed that when you hit Send on the form, the browser sort of hangs.  It's because it's trying to navigate to the `/create-post` page.  Of course, there is no such page.
+
+There's an easy fix for this.  In the response, you need to let the browser know that after it's finished with receiving the blogpost, you want it to reload the same page, and not try to go to fake page '/create-post'.  
+
+At the end of your `/create-post` handler, add this line of code:
 
 ```js
-console.log(file.toString());
+res.redirect('/');
 ```
 
-`file` is in JSON format right now.  If we want to access the blog post message inside `file`, we need to parse it from JSON back to a JavaScipt object.
-
-Add this next bit of code to your `fs.readFile`'s callback function:
-```js
-var parsedFile = JSON.parse(file);
-```
-
-Now `parsedFile` is a normal JavaScript object, and we can access the data inside it.
-
-
-Ok, so we've talked about JSON and we've talked about reading and writing files.  You now have the power to save new blog post data to your hard drive!  Work with your partner and your mentor to see if you can figure the next steps out on your own.
-
-Here's a breakdown of what you want to achieve:
-* When new blog post data comes through, read from `posts.json` to access its contents
-* Add your new blog post data to the old ones.
-* Write your new combined data back to the `posts.json` file.
-
-Oh by the way, if you want to get the current timestamp, use the JavaScript `Date.now()` method.
-
-Good luck!
-
+This means: "please redirect to the `/` endpoint."  This little trick will refresh the page!
 ## [**Next step >>>**](step08.md)
+
+---
+### Keywords
+* [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)
+* [html forms]
