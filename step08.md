@@ -106,6 +106,11 @@ Here's a breakdown of what you want to achieve:
 * Add your new blog post data to the old ones.
 * Write your new combined data back to the `posts.json` file.
 
+### Things to remember
+* `fs.writeFile()` normally overwrites the target file you've given it.  Chances are you don't want to lose all your old blog posts every time you get a new one, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
+
+* You will need to convert between JSON and a JavaScript object several times.  `JSON.parse()` and `JSON.stringify()` are what you need.
+
 Oh by the way, if you want to get the current timestamp, use the JavaScript `Date.now()` method.
 
 Good luck!
