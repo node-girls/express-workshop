@@ -15,8 +15,8 @@ Express's URL parameters look like this:
 Let's add a handler for serving individual blog posts:
 
 ```js
-app.get('posts/:postId', function (req, res) {
-    res.send('post id: ', req.params.postId);
+app.get('/posts/:postId', function (req, res) {
+    res.send('post id: ' + req.params.postId);
 });
 ```
 
