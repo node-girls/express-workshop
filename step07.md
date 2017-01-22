@@ -65,47 +65,35 @@ For now, make your `/create-post` handler simply do this: `console.log('/create-
 
 Now the contents of your blogpost is hidden in your `req` object somewhere.  Normally you would extract it using `req.body`.  Try to console.log `req.body` now.
 
-Getting `undefined`?  Not to worry, that's normal.  When data has been `POST`ed to the server, we need to do things slightly differently to access the data that's come through in the request.
+Getting `undefined`?  Not to worry, that's normal.  When data has been `POST`ed to the server as `FormData`, we need to do things slightly differently to access the data that's come through in the request.
 
-We need another middleware function: `body-parser`.  `body-parser` does what it says on the tin, it will **parse** the data in the request and make it available to you when you do `req.body`.
+We need another middleware function.  Something that can get extract the contents out of the special `FormData` object.  For this we will use `express-formidable`.  `express-formidable` is another Express middleware. It will extract the form data from the request and make it available to you when you do `req.fields`.
 
-This time though, `body-parser` is not built-in, we need to explicitly install it.
+This time though, `express-formidable` is not built-in, we need to explicitly install it.
 
-**In your terminal, install body-parser**
+**In your terminal, install express-formidable**
 ```bash
-npm install body-parser --save
+npm install express-formidable --save
 ```
 
-`require` body-parser so you can use it in your code:
+`require` `express-formidable` so you can use it in your code.  You can't use dashes in JavaScript variable names, so just call it `var formidable`.
 ```js
-var bodyParser = require('body-parser');
+var formidable = require('express-formidable');
 ```
 
 Now add this towards the top of your server, after your `require`s and before your `/create-post` endpoint:
 ```js
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(formidable());
 
 ```
-(Don't worry too much about the `{ extended:true }` bit.  If you're curious, you can read about it [here](https://www.npmjs.com/package/body-parser#bodyparserurlencodedoptions))
-
+Now inside your `/get-posts` function, add:
+```js
+console.log(req.fields);
+```
 Refresh your server and have another go at writing a blogpost.
 
-You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
+You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form on the HTML page.  The value of `blogpost` will be your message!
 
-
-### Redirecting your page
-
-So you may have noticed that when you hit Send on the form, the browser sort of hangs.  It's because it's trying to navigate to the `/create-post` page.  Of course, there is no such page.
-
-There's an easy fix for this.  In the response, you need to let the browser know that after it's finished with receiving the blogpost, you want it to reload the same page, and not try to go to fake page '/create-post'.  
-
-At the end of your `/create-post` handler, add this line of code:
-
-```js
-res.redirect('/');
-```
-
-This means: "please redirect to the `/` endpoint."  This little trick will refresh the page!
 ## [**Go to step 8 >>>**](step08.md)
 
 ---
@@ -114,4 +102,4 @@ This means: "please redirect to the `/` endpoint."  This little trick will refre
 | `GET` | An HTTP method for fetching data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). |
 | `POST` | An HTTP method for sending data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). |
 | `middleware` | Functions in Express that run before the final request handler.  A nice article explains in more depth [here](https://www.safaribooksonline.com/blog/2014/03/10/express-js-middleware-demystified) |
-| `body-parser` | An Express middleware function that parses (reads) data from the request.  Documentation on it [here](https://github.com/expressjs/body-parser)|
+| `express-formidable` | An Express middleware function that parses (reads) form and file data from the request.  Documentation on it [here](https://www.npmjs.com/package/express-formidable)|
