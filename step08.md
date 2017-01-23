@@ -79,7 +79,7 @@ fs.readFile(__dirname + '/data/posts.json', function (error, file) {
 (`__dirname` is a Node global object that gives you a path to current working directory. It's handy if we want to avoid writing the whole path out in full.)
 
 
-You'll probably see something like this:
+If you restart the server, you'll probably see something like this:
 ```bash
 <Buffer 7b 0a 20 20 20 20 22 31 34 36 37 33 39 30 33 35 36 32 39 31 22 3a 20 22 54 68 69 73 20 69 73 20 6d 79 20 76 65 72 79 20 66 69 72 73 74 20 62 6c 6f 67 ... >
 ```
