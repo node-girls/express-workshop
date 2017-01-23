@@ -86,7 +86,7 @@ Now add this towards the top of your server, after your `require`s and before yo
 app.use(formidable());
 
 ```
-Now inside your `/get-posts` function, add:
+Now inside your `/create-post` function, add:
 ```js
 console.log(req.fields);
 ```
