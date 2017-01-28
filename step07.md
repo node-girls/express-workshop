@@ -81,7 +81,7 @@ npm install express-formidable --save
 var formidable = require('express-formidable');
 ```
 
-Now add this towards the top of your server, after your `require`s and before your `/create-post` endpoint:
+Now add this towards the top of your server, after your `require`s and `app.use(express.static('public'))`, but before your `/create-post` endpoint:
 ```js
 app.use(formidable());
 
