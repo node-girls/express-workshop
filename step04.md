@@ -40,7 +40,7 @@ app.listen(3000, function () {
 });
 ```
 
-Try to `console.log` the `req` object.  Go to your terminal to see what it looks like. You should see a lot of data come through.
+Try to `console.log` the `req` object inside the handler function. Restart your server, refresh the browser, then go to your terminal to see what it looks like. You should see a lot of data come through.
 
 ## 2. Tell your handler function what to do
 
