@@ -41,9 +41,9 @@ fs.writeFile('path/to/file', yourData, function (error) {
     // do something
 });
 ```
-Argument 1: the location of the file you want to write to
-Argument 2: the data you want to write
-Argument 3: the callback function
+* Argument 1: the location of the file you want to write to
+* Argument 2: the data you want to write
+* Argument 3: the callback function
 
 The 'path/to/file' will be replaced with the actual path to the file you want to write to.  If it doesn't exist, `fs.writeFile` cleverly creates one for you.  But we already have `posts.json`, so not to worry.
 
