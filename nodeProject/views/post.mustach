@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title>
+  </head>
+  <body>
+    <h1>yay blog post!</h1>
+    <article>
+      {{ post }}
+    </article>
+  </body>
+</html>

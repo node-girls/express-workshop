@@ -1,0 +1,19 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.1",
+  "description": "the first node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "express-formidable": "^1.0.0",
+    "mustache-express": "^1.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
