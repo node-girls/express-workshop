@@ -46,14 +46,25 @@ One more step left, we need to set a **port** for our server to listen to. Think
 
 We use the **`app.listen`** method to do this. This method takes two arguments: a **port** and a **callback function** telling it what to do once the server is running. Need clarification? Read more about the `app.listen` method in the [Express documentation](http://expressjs.com/en/4x/api.html#app.listen).
 
-We're going to run our server on port `3000`, and run a simple `console.log` as our callback function. Update your `server.js` file, calling the `app.listen` method:
+We're going to run our server on port `3000` (`8080` if you are using cloud9), and run a simple `console.log` as our callback function. Update your `server.js` file, calling the `app.listen` method as follows:
 
+if you are using a local environment:
 ```js
 var express = require('express');
 var app = express();
 
 app.listen(3000, function () {
   console.log('Server is listening on port 3000. Ready to accept requests!');
+});
+```
+
+And if you are using cloud9:
+```js
+var express = require('express');
+var app = express();
+
+app.listen(8080, function () {
+  console.log('Server is listening on port 8080. Ready to accept requests!');
 });
 ```
 

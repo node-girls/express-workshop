@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
     padding: 23px 0;
 	margin: 0 15px;
-	color: #FF0040;
+	color: #5B5B5B;
 	letter-spacing: 1px;
 }
 
@@ -51,15 +51,15 @@ main {
 
 
 header {
-	background: #FF0040;
-	background: -webkit-linear-gradient(#F5A9BC, #FF0040);
-	background: -o-linear-gradient(#F5A9BC, #FF0040); 
-	background: -moz-linear-gradient(#F5A9BC, #FF0040);
-	background: linear-gradient(#F5A9BC, #FF0040);
+	background: #fffff;
+	/*background: -webkit-linear-gradient(#F5A9BC, #FF0040);*/
+	/*background: -o-linear-gradient(#F5A9BC, #FF0040); */
+	/*background: -moz-linear-gradient(#F5A9BC, #FF0040);*/
+	/*background: linear-gradient(#F5A9BC, #FF0040);*/
 }
 
 .title {
-	color: white;
+	color: #4CAF50;
 }
 
 .main-logo {
@@ -93,11 +93,11 @@ textarea {
 }
 
 button[type="submit"] {
-	background: #A5DF00;
-	background: -webkit-linear-gradient(#93C503, #ABCC4B);
-	background: -o-linear-gradient(#93C503, #ABCC4B);
-	background: -moz-linear-gradient(#93C503, #ABCC4B);
-	background: linear-gradient(#93C503, #ABCC4B);
+	background: #4CAF50;
+	background: -webkit-linear-gradient(#4CAF50, #4CAF50);
+	background: -o-linear-gradient(#4CAF50, #4CAF50);
+	background: -moz-linear-gradient(#4CAF50, #4CAF50);
+	background: linear-gradient(#4CAF50, #4CAF50);
 	border: none;
     color: white;
     padding: 4px 25px;
