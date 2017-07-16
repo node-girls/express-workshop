@@ -38,7 +38,7 @@ This creates an express-workshop directory with the repository content inside. C
 
 `$ cd express-workshop`
 
-### [Go to Step 1 >>>>](https://github.com/node-girls/express-workshop/blob/master/step01.md)
+### [Go to Step 1 >>>>](step01.md)
 
 ## Useful Links
 

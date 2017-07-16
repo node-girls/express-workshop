@@ -14,7 +14,7 @@ Express should now be installed. Check your `package.json` file to make sure it 
 
 ![package.json screenshot](https://cloud.githubusercontent.com/assets/10683087/16382664/be35f0b4-3c79-11e6-82b6-ae9e4a037c3f.png)
 
-### [Go to Step 3 >>>>](https://github.com/node-girls/express-workshop/blob/master/step03.md)
+### [Go to Step 3 >>>>](https://github.com/node-girls-australia/express-workshop/blob/master/step03.md)
 
 ## Keywords
 
