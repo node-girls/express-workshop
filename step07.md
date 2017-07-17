@@ -27,7 +27,6 @@ Open up the `index.html` file in your text editor.  If you have a look, you shou
 **Replace the greyed-out comment with this code snippet:**
 
 ```html
-<h3>Create a blog post</h3>
 <form action="/create-post" method="POST">
     <textarea name="blogpost" rows="10" cols="14"></textarea>
     <button type="submit">Send</button>
