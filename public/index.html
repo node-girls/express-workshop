@@ -3,28 +3,100 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My first Node.js blog!</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+        <title>NodeGirls Bakery - Sweet recipes with NodeJS and Express</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,600,700' rel="stylesheet" type="text/css">
         <link href="./main.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img class="main-logo" src="./img/logo1.png">
-            <h1 class="title">Node Girls</h1>
+            <div class="shop-front"></div>
+            <img class="main-logo" src="./img/logo.png" alt="NodeGirls Logo" aria-hidden="true">
+            <nav>
+                <a href="#popular" class="active">Popular</a>
+                <a href="#just-baked">Just Baked</a>
+            </nav>
         </header>
         <main>
-            <div class="entry-container">
-                <!--PASTE YOUR CODE HERE!! -->
+            <div class="articles-container">
+                <h2 id="popular">Popular</h2>
+                <article class="article-container large">
+                    <div class="article-image article-1">
+                        <div class="article-content">
+                            <h3>Vanilla Mint</h3>
+                            <div class="article-meta">
+                                <span>August 2017</span>
+                                &nbsp;&nbsp;
+                                <div class="like-icon"></div>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-container small">
+                    <div class="article-image article-2">
+                        <div class="article-content">
+                            <h3>Double Chocolate</h3>
+                            <div class="article-meta">
+                                <span>August 2017</span>
+                                &nbsp;&nbsp;
+                                <div class="like-icon"></div>
+                                <span>4</span>                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-container small">
+                    <div class="article-image article-3">
+                        <div class="article-content">
+                            <h3>Vanilla Buttercream</h3>
+                            <div class="article-meta">
+                                <span>August 2017</span>
+                                &nbsp;&nbsp;
+                                <div class="like-icon"></div>
+                                <span>2</span>                                
+                            </div>
+                        </div>
+                    </div>
+                </article>         
+                <article class="article-container large">
+                    <div class="article-image article-4">
+                        <div class="article-content">
+                            <h3>Peanut Butter</h3>
+                            <div class="article-meta">
+                                <span>August 2017</span>
+                                &nbsp;&nbsp;
+                                <div class="like-icon"></div>
+                                <span>1</span>                                
+                            </div>
+                        </div>
+                    </div>
+                </article>                              
             </div>
+            <div class="articles-container">
+                <h2 id="just-baked">Just Baked</h2>
+                <div class="post-container"></div>                
+            </div>
+            <div class="articles-container">
+                <h2>Share your recipe</h2>
+                <div>Share your favourite cake and bake recipes with the <strong>NodeGirls</strong> community!</div>
 
-            <br/>
-            <hr/>
-            <br/>
-
-            <h2>Recent Posts</h2>
-
-            <div class="post-container"></div>
+                <div class="entry-container">
+                    <!--PASTE YOUR CODE HERE!! -->
+                </div>
+            </div>
         </main>
+        <footer>
+            <div class="social-media">
+                <h6>Connect with us</h6>
+                <a href="https://www.facebook.com/NodeGirlsAustralia/" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a> 
+                <a href="https://github.com/node-girls-australia" target="_blank"><img src="./img/github.png" alt="Github"></a>
+                <a href="http://nodegirls.com.au/" target="_blank"><img src="./img/website.png" alt="Website"></a>
+                <a href="mailto:info@nodegirls.com.au"><img src="./img/email.png" alt="E-mail"></a>
+            </div>
+            <div class="credits">Github Social Logo by Zurb <a href="http://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="./script.js" type="text/javascript"></script>
     </body>

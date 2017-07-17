@@ -3,32 +3,27 @@
 ********************/
 
 body, html, div, label, p, h1, h2, h3, h4, h5, h6, form, a, input, textarea {
-	margin: 0; 
-	padding: 0; 
 	border: 0; 
+	margin: 0; 
 	outline: none;
+	padding: 0; 
+	font-size: 16px;	
 }
 
 
 body {
-	line-height: 1;
-	font-size: 88%;
-	font-family: 'Open Sans', arial, sans-serif;
 	background: #FAFAFA;
-	color: #585858;
+	color: #52341D;
+	font-family: 'Open Sans', arial, sans-serif;
 }
-
-div {
-	width: 100%;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
-    padding: 23px 0;
-	margin: 0 15px;
-	color: #5B5B5B;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
 	letter-spacing: 1px;
+	margin: 0 15px;
+	padding: 23px 0;
 }
 
 h1 {
@@ -39,33 +34,181 @@ h2 {
 	font-size: 25px;
 }
 
-main {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-}
-
 /*******************
 *  Header
 ********************/
 
 
 header {
-	background: #fffff;
-	/*background: -webkit-linear-gradient(#F5A9BC, #FF0040);*/
-	/*background: -o-linear-gradient(#F5A9BC, #FF0040); */
-	/*background: -moz-linear-gradient(#F5A9BC, #FF0040);*/
-	/*background: linear-gradient(#F5A9BC, #FF0040);*/
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	font-family: 'Quicksand', sans-serif;
+	padding: 0 5px;
+	color: #52341D;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	font-size: 20px;
+}
+
+nav .active {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.shop-front {
+	background-image: url("./img/shop-front.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-size: contain; 
+	height: 28px;
+	text-align: center;
 }
 
 .title {
-	color: #4CAF50;
+	color: white;
 }
 
 .main-logo {
-	float: left;
-	width: 100px;
+	padding: 20px 0;
+	width: 150px;
 	height: auto;
+}
+
+/*******************
+*  Footer
+********************/
+
+footer {
+	background-color: #E8A1B3;
+	text-align: center;
+}
+
+.social-media {
+	color: #ffffff;
+	padding: 30px 0;
+}
+
+.social-media a {
+	padding: 0 5px;
+}
+
+.social-media img {
+	width: 48px;
+}
+
+.credits {
+	color: #ffffff;
+	font-size: 9px;
+	padding: 20px 0;
+}
+
+div.credits a, div.credits a:visited {
+	color: #ffffff;
+	font-size: 9px;
+}
+
+main {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 970px;
+}
+
+/*******************
+*  Popular
+********************/
+
+.articles-container {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.article-container {
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	width: 60%;
+}
+
+.large {
+	width: 60%;
+}
+
+.small {
+	width: 35%;
+}
+
+.like-icon {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background-image: url("./img/like.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.article-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	height: 288px;	
+	position: relative;
+}
+
+.article-content {
+    bottom: 0;
+	color: #ffffff;	
+	left: 0;
+    position: absolute;
+	text-align: left;    
+}
+
+.article-content h3 {
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.article-meta {
+	margin-bottom: 15px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.article-1 {
+	background-color:#ffffff;
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+		url('./img/brooke-lark-203839.jpg');
+}
+
+.article-2 {
+	background-color:#ffffff;
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+		url('./img/mario-calvo-5371.jpg');
+}
+
+.article-3 {
+	background-color:#ffffff;
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+		url('./img/stephanie-mccabe-65986.jpg');
+}
+
+.article-4 {
+	background-color:#ffffff;
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
+		url('./img/brian-chan-12168.jpg');
 }
 
 
@@ -74,74 +217,92 @@ header {
 ********************/
 
 .entry-container {
-	margin: 20px 0 50px;
+	margin: 20px auto;
+	text-align: center;
+	width: 50%;
 }
 
-label {
-	width: 100%;
-}
-
-.text-wrapper {
-	width: 80%;
-}
-
-textarea {
-	width: 96%;
+textarea, input {
+	width: 97%;
+	min-height: 38px;
 	border-radius: 3px;
-	border: 1px solid #848484;
-	padding: 5px 2%;
+	border: 1px solid #52341D;
+	padding: 5px;
+	margin: 5px 0;
+	background: transparent;
 }
 
 button[type="submit"] {
-	background: #4CAF50;
-	background: -webkit-linear-gradient(#4CAF50, #4CAF50);
-	background: -o-linear-gradient(#4CAF50, #4CAF50);
-	background: -moz-linear-gradient(#4CAF50, #4CAF50);
-	background: linear-gradient(#4CAF50, #4CAF50);
+	background-color: #52341D;
 	border: none;
-    color: white;
-    padding: 4px 25px;
+    color: #ffffff;
+	cursor: pointer;
+	font-size: 16px;
+    padding: 15px 5px;
+	width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    float: right;
     margin-top: 10px;
     border-radius: 3px;
 }
 
 /*******************
-*  Posts
+*  Recent Articles
 ********************/
-
-hr {
-	background: #BDBDBD;
+.post-container {
+	cursor: pointer;
 }
 
 .thumbnail {
-	float: left;
-	width: 50px;
-	height: auto;
-	margin-left: 3px;
-	margin-top: 3px;
-}
-
-.post {
+	height: 188px;
 	width: 100%;
-    border: 1px solid #848484;
-    float: left;
-    margin: 2%;
-    border-radius: 3px;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.4);
-    background: white;
+	margin-bottom: 10px;
 }
 
-.post p {
-	margin: 5px 10px;
+.post {	
+    background: #ffffff;
+    border-radius: 2px;
+	display: inline-block;
+	height: 274px;
+	margin: 10px;
+	text-align: center;
+	width: 350px;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.3);
+    box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.3);
+    
 }
 
-@media (min-width: 600px) {
-	 .post {
-		width: 28.9%;
+.post h3 {
+	font-size: 20px;
+	text-overflow: ellipsis;
+	text-align: left;
+	overflow: hidden;
+	padding: 0;
+	margin-bottom: 10px;
+	white-space: nowrap
+}
+
+/*******************
+*  Media Queries
+********************/
+
+@media (min-width: 978px) {
+	main {
+		width: 70%;
 	}
+}
+
+
+@media screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	.large, .small {
+		width: 100%;
+	}
+
+	.entry-container {
+		width: 95%;
+	}	
 }

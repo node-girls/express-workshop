@@ -4,6 +4,11 @@ if (document.readyState !== 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 }
 
+window.onbeforeunload = function() {
+    $('nav a').off('click', setActiveLink);
+    return null;
+}
+
 function ready () {
     getBlogposts('/get-posts');
 
@@ -16,6 +21,8 @@ function ready () {
         var formData = new FormData(form);
 
         postBlogposts(formActionUrl, formData);
+        
+        $('nav a').on('click', setActiveLink);
     });
 }
 
@@ -61,18 +68,32 @@ function addBlogpostsToPage (data) {
         if (data.hasOwnProperty(blogpost)) {
 
             var postDiv         = document.createElement('div');
-            var postText        = document.createElement('p');
+            var postText        = document.createElement('h3');
+            var postMeta        = document.createElement('div');
+            var postDate        = document.createElement('span');
             var thumbnail       = document.createElement('img');
             var postContainer   = document.querySelector('.post-container');
 
-            thumbnail.src = "./img/logo2.png";
+            thumbnail.src = "./img/default-image.jpg";
             thumbnail.className = "thumbnail";
             postText.innerHTML = data[blogpost];
+            postDate.innerHTML = "August 2017";
             postDiv.className = "post";
+            postMeta.className = "article-meta";
 
             postDiv.appendChild(thumbnail);
             postDiv.appendChild(postText);
+            postMeta.appendChild(postDate);
+            postDiv.appendChild(postMeta);
             postContainer.appendChild(postDiv);
         }
     }
+}
+
+function setActiveLink(event) {
+    const url = this.href;
+    $('nav a').each(function() {
+        $(this).removeClass('active');
+        if (url == this.href) $(this).addClass('active');
+    });
 }
