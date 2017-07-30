@@ -16,7 +16,7 @@ This is an introductory workshop to Node.js and Express. You'll be building your
 
 This workshop is divided into a number of steps. At the end of each segment, you should find a link to continue onto the next step. We suggest you follow along with the tutorial online, and write your code in a separate repository.
 
-You will see code snippets throughout the walkthrough. Try to resist the urge to copy and paste - you will learn much more if you get into the habit of typing things out. If you want to test out small bits of code before adding them to your project, [repl.it](repl.it) is a useful tool.
+You will see code snippets throughout the walkthrough. Try to resist the urge to copy and paste - you will learn much more if you get into the habit of typing things out. 
 
 Throughout each step, we have **bolded** any jargon that you may or may not be familiar with. These terms are explained in the [Keywords](https://github.com/node-girls/express-workshop/#keywords) section at the bottom of each page. You'll also find a link to our cheatsheets under [Useful Links](https://github.com/node-girls/express-workshop/#useful-links).
 
@@ -24,7 +24,7 @@ Throughout each step, we have **bolded** any jargon that you may or may not be f
 
 #### 1. Install Node
 
-You will need Node.js installed. Download it from the Node.js website [here](https://nodejs.org/en/).
+You will need Node.js installed. The cloud9 development environment comes pre-installed with Node. If you are not using cloud9, please download Node from the Node.js website [here](https://nodejs.org/en/).
 
 #### 2. Fork and clone this repository
 
