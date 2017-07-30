@@ -14,7 +14,6 @@ It would be a great idea to create a new branch on Git for yourself, so you can 
 Try some more of express's features by adding a page for individual blog posts using express's URL
 parameters and templating stuff. [Tutorial here :)](extension-templating.md).
 
-
 ### Use a database
 Instead of writing to a file on your hard drive, you could save your blog posts in a database, which would be much quicker in terms of performance if there was a lot of data.
 
