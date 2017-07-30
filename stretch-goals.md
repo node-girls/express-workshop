@@ -12,7 +12,7 @@ parameters and templating stuff. [Tutorial here :)](extension-templating.md).
 ### Display the date
  Edit `script.js` so that the timestamps for the previous blog posts are displayed in a human-readable way.
 
- * [Javascript date functions](http://www.w3schools.com/jsref/jsref_obj_date.asp)
+ * [Javascript date functions](http://www.w3schools.com/jsref/jsref_obj_date.asp) and [it's docs](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 
 ### Use a database

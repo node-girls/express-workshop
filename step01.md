@@ -60,6 +60,6 @@ Great! You should now see a new file called `package.json` in your project's fol
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|
-| `package.json` | A `package.json` is the file used to store information about a Node.js project, such as its name and its dependencies. Read more [here](http://browsenpm.org/package.json). |
+| `package.json` | A `package.json` is the file used to store information about a Node.js project, such as its name and its dependencies. Read more [here](https://docs.npmjs.com/files/package.json). |
 | npm | npm is a "package manager" for Node.js, meaning it allows you to easily install external modules (or chunks of code) published by others and use them in your project. |
 | dependencies | Dependencies are external code modules that are required to run your project. |

@@ -119,7 +119,7 @@ Good luck!
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|
-| `JSON` | A format for storing and transporting data. Read more [here](http://www.w3schools.com/js/js_json.asp). |
+| `JSON` | A format for storing and transporting data. Read more [here](http://www.w3schools.com/js/js_json.asp). Or for more detailed docs [read this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) |
 | `fs` | A core Node.js module for interacting with the file system on your computer.  Read more [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_file_system) |
 | `fs.readFile()` | Asynchronously reads the entire contents of a file |
 | `fs.writeFile()` | Asynchronously writes data to a file |
