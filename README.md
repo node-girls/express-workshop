@@ -45,3 +45,4 @@ This creates an express-workshop directory with the repository content inside. C
 * [What is Node?](https://github.com/node-girls/what-is-node)
 * [Node cheatsheet](https://github.com/node-girls/cheatsheets/blob/master/node-cheatsheet.md)
 * [Command line cheatsheet](https://github.com/node-girls/cheatsheets/blob/master/command-line-cheatsheet.md)
+* [MDN Javascript Guides & Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
