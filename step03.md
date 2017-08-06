@@ -85,7 +85,7 @@ $ node server.js
 And if you are using cloud9:
 
 - Select the file `server.js` in the workspace folder tree.
-- Right click the `Run` button on the top menu and select `New Run Configuration` from the menu. This will open a tab at the bottom of your workspace.
+- Right click the `Run` button on the top menu and select `New Run Configuration` from the menu. This will open the Run Panel at the bottom of your workspace.
 - Type `node server.js` in the Command text editor and press Enter.
 
 If you see this, congratulations! You have built yourself a server!
