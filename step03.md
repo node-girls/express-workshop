@@ -70,12 +70,21 @@ app.listen(8080, function () {
 
 ## 5. Switch the server on!
 
-You've built your server, but it isn't running yet. We need to run a command in the terminal to do this. We are going to use the `node` keyword to run the server file.
+You've built your server, but it isn't running yet.
+
+if you are using a local environment:
+
+We need to run a command in the terminal to do this. We are going to use the `node` keyword to run the server file.
 
 Type the following command in your terminal:
+
 ```
 $ node server.js
 ```
+
+And if you are using cloud9:
+
+Simply click the `Run` button on the top menu.
 
 If you see this, congratulations! You have built yourself a server!
 
