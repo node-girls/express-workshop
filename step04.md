@@ -75,7 +75,7 @@ Now, open your favourite browser (we like Chrome), and navigate to `http://local
 
 And if you are using cloud9:
 
-Click the `Run` button on the top menu and keep your eye on your terminal below, because cloud9 gives you a host name specific to your environment (Similar to that ttps://<workspace-name>-<username>.c9users.io.) then you just type it on your browser.
+Click the `Run` button on the top menu and keep your eye on your terminal below, because cloud9 gives you a host name specific to your environment (Similar to that https://workspacename-username.c9users.io.) then you just type it on your browser.
 
 OR
 
