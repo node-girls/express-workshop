@@ -65,11 +65,23 @@ app.listen(3000, function () {
 
 Quit your server in the terminal with `ctrl + c`. Then restart it to run your new changes.
 
+if you are using a local environment:
+
 ```
 $ node server.js
 ```
 
-Now, open your favourite browser (we like Chrome), and navigate to `http://localhost:3000`. If you see your message in the browser, congratulations! You just sent your first response from the server.
+Now, open your favourite browser (we like Chrome), and navigate to `http://localhost:3000`.
+
+And if you are using cloud9:
+
+Click the `Run` button on the top menu and keep your eye on your terminal below, because cloud9 gives you a host name specific to your environment (Similar to that https://workspacename-username.c9users.io.) then you just type it on your browser.
+
+OR
+
+Simply click `Preview` button on the top menu, you will see a browser is opened inside cloud9.
+
+If you see your message in the browser, congratulations! You just sent your first response from the server.
 
 ### [Go to Step 5 >>>>](step05.md)
 
