@@ -93,7 +93,7 @@ Refresh your server and have another go at writing a blogpost.
 
 You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form on the HTML page.  The value of `blogpost` will be your message!
 
-## [**Go to step 8 >>>**](step08.md)
+### [**Go to Step 8 >>>**](step08.md)
 
 ---
 | Keyword | Explanation |
