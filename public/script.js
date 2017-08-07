@@ -21,9 +21,11 @@ function ready () {
         var formData = new FormData(form);
 
         postBlogposts(formActionUrl, formData);
-        
-        $('nav a').on('click', setActiveLink);
+
     });
+
+    $('nav a').on('click', setActiveLink);
+
 }
 
 /****
