@@ -76,13 +76,13 @@ if you are using a local environment:
 
 We need to run a command in the terminal to do this. We are going to use the `node` keyword to run the server file.
 
-Type the following command in your terminal:
+Type the following command in your terminal (or the cloud9 terminal):
 
 ```
 $ node server.js
 ```
 
-if you are using cloud9, you can select the file `server.js` in the workspace folder tree and click the `Run` button on the top menu.
+if you are using cloud9, you can also select the file `server.js` in the workspace folder tree and click the `Run` button on the top menu.
 
 
 If you see this, congratulations! :clap: :clap: You have built yourself a server!
