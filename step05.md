@@ -2,8 +2,6 @@
 
 At the moment our server only does one thing. When it receives a request from the `/` endpoint, it sends back the same response: "Yay Node Girls!".
 
-Want to check? Try typing http://localhost:3000/nodegirls and see what happens.
-
 However by making use of endpoints, we can make the server send different responses for different requests. This concept is called **routing**.
 
 ### What is an endpoint?
