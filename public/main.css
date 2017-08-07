@@ -187,28 +187,28 @@ main {
 	background-color:#ffffff;
 	background-image: 
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-		url('./img/brooke-lark-203839.jpg');
+		url('./img/article-01.jpg');
 }
 
 .article-2 {
 	background-color:#ffffff;
 	background-image: 
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-		url('./img/mario-calvo-5371.jpg');
+		url('./img/article-02.jpg');
 }
 
 .article-3 {
 	background-color:#ffffff;
 	background-image: 
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-		url('./img/stephanie-mccabe-65986.jpg');
+		url('./img/article-03.jpg');
 }
 
 .article-4 {
 	background-color:#ffffff;
 	background-image: 
 		linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), 
-		url('./img/brian-chan-12168.jpg');
+		url('./img/article-04.jpg');
 }
 
 
