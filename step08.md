@@ -115,7 +115,7 @@ Oh by the way, if you want to get the current timestamp, use the JavaScript `Dat
 
 Good luck!
 
-## [**Go to step 9 >>>**](step09.md)
+### [**Go to Step 9 >>>**](step09.md)
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|

@@ -28,7 +28,8 @@ app.get("/chocolate", function (req, res) {
 
 *Challenge:* Add some code so that your server sends one message when the endpoint is `/node` and another one when it's `/girls`.
 
-## [**next step >>>**](step06.md)
+### [Go to Step 6 >>>>](step06.md)
+
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|

@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 Delete all your `app.get` endpoint functions, and replace them with the line of code above. Restart your server, refresh your browser and see what happens! If you see a Node Girls CMS, then your static assets have been successfully served.
 
-## [**next step >>>**](step07.md)
+### [Go to Step 7 >>>>](step07.md)
 
 | Keyword | Explanation |
 |--------|:-------------------------------:|
