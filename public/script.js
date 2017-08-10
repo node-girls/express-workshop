@@ -74,7 +74,7 @@ function addBlogpostsToPage (data) {
 
             var postDetail = document.createElement('div');
             postDetail.className = 'postDetail'
-            postDetail.innerHTML = 'August 2017';
+            postDetail.innerHTML = blogpost;
 
             postDiv.appendChild(postText);
             postDiv.appendChild(postDetail);
