@@ -96,21 +96,10 @@ h2 {
 	font-size: 25px;
 }
 
-
-/*******************
-*  Header
-********************/
-/*
-div.container {
-	margin: 0px auto;
-	width: 80%;
-}*/
-
 .centered {
 	margin: 0px auto;
 	width: 80%;
 }
-
 
 .title {
 	color: white;
@@ -122,20 +111,7 @@ div.container {
 }
 
 
-
-.main-logo {
-	/*float: left;*/
-	/*width: 100px;*/
-	/*height: auto;*/
-}
-
-
-/*******************
-*  Enter a New Post
-********************/
-
 div.entry-container {
-	/*margin: 20px 0 50px;*/
 	padding: 20px !important;
 }
 
@@ -145,14 +121,6 @@ div.entry-container textarea {
 	border: 1px solid lightgrey;
 	padding: 12px 12px;
 
-}
-
-label {
-	/*width: 100%;*/
-}
-
-.text-wrapper {
-	/*width: 80%;*/
 }
 
 
@@ -183,42 +151,17 @@ button[type="submit"] {
 	float: right;
 }
 
-
-
 div.clearfix {
 	clear: both;
 }
 
-
-/*******************
-*  Posts
-********************/
-
-/*hr {
-	background: #BDBDBD;
-}*/
-
-/*.thumbnail {
-	float: left;
-	width: 50px;
-	height: auto;
-	margin-left: 3px;
-	margin-top: 3px;
-}*/
-
-div.posts {
-
-}
-
 div.post {
-	/*width: 100%;*/
   border: 1px solid lightgrey;
   margin: 0px 0px 15px 0px;
 	padding: 0px;
   border-radius: 3px;
 	background-color: #FAFAFA;
 }
-
 
 div.postDetail {
 	border-top: 1px solid lightgrey;
