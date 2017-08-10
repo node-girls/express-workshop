@@ -46,8 +46,10 @@ footer {
   bottom: 0;
   height: 100px;
   width: 100%;
-	/*padding: 25px 0px;*/
+	color: white;
 }
+
+footer a
 
 
 
@@ -128,21 +130,34 @@ label {
 }
 
 
+button[type="submit"]:hover {
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
 
 button[type="submit"] {
-	background: #4CAF50;
-	border: none;
-  color: white;
-	font-size: 14px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  float: right;
-  margin-top: 10px;
-  border-radius: 3px;
+	margin-top: 10px;
+	font-size: 16px;
+  outline: 0;
+  color: #fff;
+  background-color: #80c217;
+  text-align: center;
+  letter-spacing: 3px;
+  cursor: pointer;
+	border: 2px solid #4CAF50;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 15px 30px 12px 30px;
 	font-weight: bold;
-	cursor: pointer;
+	text-transform: uppercase;
+	vertical-align: middle;
+	-webkit-tap-highlight-color: transparent;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	float: right;
 }
+
+
 
 div.clearfix {
 	clear: both;
