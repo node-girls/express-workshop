@@ -4,11 +4,6 @@ if (document.readyState !== 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 }
 
-window.onbeforeunload = function() {
-    $('nav a').off('click', setActiveLink);
-    return null;
-}
-
 function ready () {
     getBlogposts('/get-posts');
 
@@ -21,11 +16,7 @@ function ready () {
         var formData = new FormData(form);
 
         postBlogposts(formActionUrl, formData);
-
     });
-
-    $('nav a').on('click', setActiveLink);
-
 }
 
 /****
@@ -70,32 +61,24 @@ function addBlogpostsToPage (data) {
         if (data.hasOwnProperty(blogpost)) {
 
             var postDiv         = document.createElement('div');
-            var postText        = document.createElement('h3');
-            var postMeta        = document.createElement('div');
-            var postDate        = document.createElement('span');
-            var thumbnail       = document.createElement('img');
+            var postText        = document.createElement('div');
             var postContainer   = document.querySelector('.post-container');
 
-            thumbnail.src = "./img/default-image.jpg";
-            thumbnail.className = "thumbnail";
-            postText.innerHTML = data[blogpost];
-            postDate.innerHTML = "August 2017";
-            postDiv.className = "post";
-            postMeta.className = "article-meta";
+            // put <p> tags around each separate line of blogpost, otherwise
+            // they will all run together
+            postText.innerHTML = data[blogpost].split('\n').map(function(item){
+              return '<p>'+item+'</p>';
+            }).join('');
+            postText.className = 'postBody';
+            postDiv.className = 'post';
 
-            postDiv.appendChild(thumbnail);
+            var postDetail = document.createElement('div');
+            postDetail.className = 'postDetail'
+            postDetail.innerHTML = 'August 2017';
+
             postDiv.appendChild(postText);
-            postMeta.appendChild(postDate);
-            postDiv.appendChild(postMeta);
+            postDiv.appendChild(postDetail);
             postContainer.appendChild(postDiv);
         }
     }
-}
-
-function setActiveLink(event) {
-    const url = this.href;
-    $('nav a').each(function() {
-        $(this).removeClass('active');
-        if (url == this.href) $(this).addClass('active');
-    });
 }
