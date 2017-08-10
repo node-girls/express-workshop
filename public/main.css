@@ -36,7 +36,7 @@ main {
 	display: block;
 	width: 80%;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 footer {
@@ -44,13 +44,39 @@ footer {
 	position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
   width: 100%;
-	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
 }
 
-footer a
+footer div.social-media {
+	color: white !important;
+	margin-bottom: 10px;
+}
 
+footer a {
+	color: #a7a7a7;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer div.social-media ul {
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0px;
+}
+
+footer div.social-media ul li {
+	font-size: 16px;
+	margin-bottom: 9px;
+}
 
 
 /* ELEMENTS */
