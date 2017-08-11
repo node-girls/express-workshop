@@ -51,7 +51,7 @@ footer {
 }
 
 footer div.social-media {
-	color: white !important;
+	color: #fff;
 	margin-bottom: 10px;
 }
 
@@ -112,7 +112,7 @@ h2 {
 
 
 div.entry-container {
-	padding: 20px !important;
+	padding: 20px;
 }
 
 div.entry-container textarea {
