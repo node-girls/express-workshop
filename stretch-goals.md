@@ -5,14 +5,13 @@ If you finish early, or want to keep working on this as a side project after the
 It would be a great idea to create a new branch on Git for yourself, so you can experiment and not have to worry about ruining your previous code.
 
 ### Display the date
- Edit `script.js` so that the timestamps for the previous blog posts are displayed in a human-readable way.
+Currently each post displays it's timestamp at the bottom.  Edit `script.js` so that the timestamps for the previous blog posts are displayed in a human-readable way.
 
  * [Javascript date functions](http://www.w3schools.com/jsref/jsref_obj_date.asp) and [docs](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ### Display individual posts with URL parameters and templating
 
-Try some more of express's features by adding a page for individual blog posts using express's URL
-parameters and templating stuff. [Tutorial here :)](extension-templating.md).
+Try some more of express's features by adding a page for individual blog posts using express's URL parameters and templating stuff. [Tutorial here :)](extension-templating.md).
 
 ### Use a database
 Instead of writing to a file on your hard drive, you could save your blog posts in a database, which would be much quicker in terms of performance if there was a lot of data.

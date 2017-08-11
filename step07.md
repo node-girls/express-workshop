@@ -19,8 +19,9 @@ We're going to add a form to the `index.html` page, so that you can write your b
 Open up the `index.html` file in your text editor.  If you have a look, you should see this:
 
 ```html
-<div class="entry-container">
-    <!--PASTE YOUR CODE HERE!! -->
+<div class="entry-container post">
+  <!--PASTE YOUR CODE HERE!! -->
+  <div class="clearfix"></div>
 </div>
 ```
 
@@ -28,8 +29,8 @@ Open up the `index.html` file in your text editor.  If you have a look, you shou
 
 ```html
 <form action="/create-post" method="POST">
-    <textarea name="blogpost" rows="10" cols="14"></textarea>
-    <button type="submit">Send</button>
+  <textarea name="blogpost" rows="5" placeholder="Write something cool, insightful, or funny here."></textarea>
+  <button type="submit">Post</button>
 </form>
 ```
 
