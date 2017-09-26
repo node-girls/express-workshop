@@ -1,5 +1,11 @@
 # Step 8 - Saving your blog post
 
+📣 Ok, so now it's time for a mini challenge.  Steps 8 and 9 will require a little bit of your problem-solving skills.  But don't worry, these mini challenges are 100% doable with the things you've learnt so far!
+
+As always, chat with a mentor or collaborate with your neighbour if you need to.
+
+---
+
 Right now, your precious blog posts aren't being saved anywhere, which is a bit of a shame.  Let's do something about that.
 
 ### JSON - the handy data format
@@ -98,18 +104,20 @@ var parsedFile = JSON.parse(file);
 
 Now `parsedFile` is a normal JavaScript object, and we can access the data inside it.
 
+### Mini challenge
+
 
 Ok, so we've talked about JSON and we've talked about reading and writing files.  You now have the power to save new blog post data to your hard drive!  Work with your partner and your mentor to see if you can figure the next steps out on your own.
 
 Here's a breakdown of what you want to achieve:
 * When new blog post data comes through, read from `posts.json` to access its contents
-* Add your new blog post data to the old ones.
+* Add your new blog post data to the old ones.  For each post, use a timestamp as the key, and the data as the value, just like the example in `posts.json`.
 * Write your new combined data back to the `posts.json` file.
 
-### Things to remember
+#### Things to remember
 * `fs.writeFile()` normally overwrites the target file you've given it.  Chances are you don't want to lose all your old blog posts every time you get a new one, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
 
-* You will need to convert between JSON and a JavaScript object several times.  `JSON.parse()` and `JSON.stringify()` are what you need.
+* You will need to convert between JSON and a JavaScript object several times.  `JSON.parse()` converts JSON to a JavaScript object. `JSON.stringify()` does the opposite (JS object to JSON).  Use both of those.
 
 Oh by the way, if you want to get the current timestamp, use the JavaScript `Date.now()` method.
 
