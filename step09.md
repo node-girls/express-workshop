@@ -1,5 +1,9 @@
 # Step 9 - Displaying your blog posts
 
+Great work!  Wipe off those beads of sweat - it's the final mini-challenge.  You can do it! 💥
+
+---
+
 So now we're saving the blog posts to the server.  Time to get them and display them on the page!
 
 If you look inside `public/script.js`, there's a whole bunch of JavaScript code in there.  Don't worry about what all the code means, just know that it's responsible for sending a request to GET old blog posts and display them on the page underneath "Recent Posts".

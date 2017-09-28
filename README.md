@@ -1,6 +1,5 @@
 <img src="https://github.com/node-girls/workshop-cms/blob/master/readme-images/logo.png?raw=true">
 
-[![Join the chat at https://gitter.im/node-girls/express-workshop-complete](https://badges.gitter.im/node-girls/express-workshop-complete.svg)](https://gitter.im/node-girls/express-workshop-complete?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Express Workshop
 
@@ -19,6 +18,10 @@ This workshop is divided into a number of steps. At the end of each segment, you
 You will see code snippets throughout the walkthrough. Try to resist the urge to copy and paste - you will learn much more if you get into the habit of typing things out. If you want to test out small bits of code before adding them to your project, [repl.it](repl.it) is a useful tool.
 
 Throughout each step, we have **bolded** any jargon that you may or may not be familiar with. These terms are explained in the [Keywords](https://github.com/node-girls/express-workshop/#keywords) section at the bottom of each page. You'll also find a link to our cheatsheets under [Useful Links](https://github.com/node-girls/express-workshop/#useful-links).
+
+The steps start off introducing you to how Node and Express work.  In the last two steps, there are some mini challenges, requiring some problem-solving.  But you'll definitely have all the knowledge you need to complete it!
+
+Feel free to chat to a mentor, or collaborate with your neighbour whenever you need.
 
 ## Before you Start
 
