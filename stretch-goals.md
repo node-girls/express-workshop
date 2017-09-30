@@ -4,6 +4,46 @@ If you finish early, or want to keep working on this as a side project after the
 
 It would be a great idea to create a new branch on Git for yourself, so you can experiment and not have to worry about ruining your previous code.
 
+### Append new posts to posts.json
+
+Reading every line in your posts.json file just to append a few more at the end isn't very efficient. Try changing it with this structure for the data file:
+
+```js
+{
+    "date": "1467390356291",
+    "content": "This is my very first blog post!"
+}
+```
+
+Now in `app.post` you can create a Javascript object, stringify it, and append it to the file preceded by `',\n'`. You can use this `fs` function:
+
+```js
+fs.appendFile('path/to/file', ',\n', function (error) {});
+```
+
+You'll also need to alter `app.get`, because this file is no longer a proper JSON object so `script.js` won't be able to parse it as one. You'll have to wrap the text in square brackets before using `JSON.Parse`, like this
+
+```js
+fs.readFile(filename, function(error, file) {
+    var json = JSON.Parse('[' + file.toString() + ']');
+});
+```
+The variable `json` is now a Javascript array of objects with two properties, date and content, which you can send as the response message, using `res.send(message);`.
+
+Finally, in `script.js` change line 7 to
+
+```js
+data.forEach(function(blogPost) {
+```
+
+line 15
+
+```js
+postText.innerHTML = blogPost.content;
+```
+
+and close the brackets properly in line 22!
+
 ### Display individual posts with URL parameters and templating
 
 Try some more of express's features by adding a page for individual blog posts using express's URL
