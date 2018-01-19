@@ -18,7 +18,7 @@ app.post("/create-post", function(req,res){
     console.log(req.body);
     console.log(req.fields);
 });
-console.log(req.fields);
+// console.log(req.fields);
 // console.log(req.body);
 app.listen(3000,function(){
 console.log('Server is listenning on port 3000.Ready to accept requests!');
