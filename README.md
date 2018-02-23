@@ -1,5 +1,7 @@
 <img src="https://github.com/node-girls/workshop-cms/blob/master/readme-images/logo.png?raw=true">
 
+# Workshop Slides
+You can find the [slide](https://docs.google.com/presentation/d/1rAsEVy5VGj-vtOlEK9RNFKs16ieImPpRd4rNYCKrfbs/edit?usp=sharing) here
 # Express Workshop
 
 ## What is this?
@@ -45,5 +47,5 @@ This creates an express-workshop directory with the repository content inside. C
 * [MDN Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 
-## Cudos
+## Kudos
 Workshop is created by London NodeGirls brunch - https://github.com/node-girls
