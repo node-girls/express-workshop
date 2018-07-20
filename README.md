@@ -4,4 +4,4 @@
 
 This is the code for our introductory workshop to Node.js and Express. You'll be building your own platform to write, publish and save blog posts (a basic content management system, or CMS).
 
-The workshop itself can be found at (https://node-girls.gitbook.io)[node-girls.gitbook.io]
+The workshop itself can be found at node-girls.gitbook.io
