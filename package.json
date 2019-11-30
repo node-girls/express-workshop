@@ -1,0 +1,27 @@
+{
+  "name": "express-workshop",
+  "version": "1.0.0",
+  "description": "<img src=\"https://github.com/node-girls/workshop-cms/blob/master/readme-images/logo.png?raw=true\">",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esterlegaz/express-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esterlegaz/express-workshop/issues"
+  },
+  "homepage": "https://github.com/esterlegaz/express-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
