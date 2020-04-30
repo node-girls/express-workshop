@@ -3,7 +3,7 @@
 Let's test the `/get-posts` endpoint
 
 ```
-it('get endpoint', () => {
+it('should return 200 status on the GET endpoint', () => {
     const response = request.get('/get-posts')
     expect(response.status).toBe(200)
 })

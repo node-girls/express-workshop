@@ -23,7 +23,7 @@ Let's re-write our test to include these keywords
 ___
 
 ```
-it('get endpoint', async done => {
+it('should return 200 status on the GET endpoint', async done => {
     const response = await request.get('/get-posts')
 
     expect(response.status).toBe(200)
