@@ -14,7 +14,9 @@ _____
 ### What is the issue??
 The final line "asynchronous operations weren't stopped" might give us a clue.
 
-Remember how Node is asynchronous and we used callbacks to deal with this? Well the same goes for our tests, they also need to handle requests asynchronously. In our tests, we need to wait for the requests to be done before we can check the response.
+Remember how Node is asynchronous and we used callbacks to deal with this in the Express workshop? 
+
+Well the same goes for our tests, they also need to handle requests asynchronously. In our tests, we need to wait for the requests to be done before we can check the response.
 
 Luckily it's pretty easy with Jest, we need to use the `async`, `await` and `done` keywords.
 
