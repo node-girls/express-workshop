@@ -1,6 +1,6 @@
 ### Testing POST endpoints
 
-If we remember in our Node-Girls workshop, the `POST` request is quite different to a `GET` request.
+If we remember in our Express Workshop, the `POST` request is quite different to a `GET` request.
 
 In a `POST` we are sending some data to the server.
 
