@@ -53,4 +53,4 @@ What is Jest and why are we using it?
 - It is used by most companies today
 
 What is Supertest?
-- Supertest is a library written to test HTTP requests to a node server (perfect for what we are doing!)
+- Supertest is a library written to test HTTP requests to a Node server (perfect for what we are doing!)
