@@ -11,13 +11,13 @@ It is super easy to introduce bugs into our codebase. Testing gives us the confi
 Testing also helps us find the issues faster and more accurately than if we were to try and find those bugs manually.
 
 One approach to testing is called [TDD](https://medium.com/javascript-scene/testing-software-what-is-tdd-459b2145405c) (Test Driven Development). This approach follows 3 steps:
-- Write a test that fails
-- Make the test pass
-- Refactor your code
+- Write a test that fails: This prevents false positives, so you know what you wrote made it pass.
+- Make the test pass: Write the code to make it pass!
+- Refactor your code (if neccessary): Now you have a passing test, you can change your code confidently.
 
-We will be following this approach throughout this tutorial.
 
-How is this helpful you ask? Say for example we want to create an endpoint `/we-love-cake`. The test might look something like this:
+### So how is testing helpful? 
+Say for example we want to create an endpoint `/we-love-cake`. The test might look something like this:
 
 ```
 it('should return a 200 status from the /we-love-cake endpoint', async done => {
